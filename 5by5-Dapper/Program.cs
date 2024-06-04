@@ -6,9 +6,10 @@ Console.WriteLine("Inicio...");
 
 Pedido pedido = new Pedido  
 {
-    Id = 1,
-    Descricao = "Quero tudo",
-    Mesa = 10
+    Id = 2,
+    Descricao = "Quero tudo4",
+    Mesa = 10,
+    Item = new Item { Descricao = "Coca" }
 };
 if(new PedidoController().Inserir(pedido))
 {
@@ -18,3 +19,5 @@ else
 {
     Console.WriteLine("Erro");
 }
+
+
